@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="recursos/favicon.ico"
+			type="image/x-icon"
+		/>
+		<title>HTML | Formularios</title>
+	</head>
+	<body>
+		<form action="https://ptsv2.com/t/t5ku0-1664779543/post" method="post">
+			<fieldset>
+				<legend>Datos personales</legend>
+
+				<div>
+					<label for="username">Nombre:</label>
+					<!-- Este campo es requerido por el atributo required -->
+					<input
+						type="text"
+						name="username"
+						id="username"
+						placeholder="Nombre de usuario"
+						required
+						autocomplete="off"
+					/>
+				</div>
+				<div>
+					<label for="cantidad">Cantidad:</label>
+					<input
+						type="number"
+						name="cantidad"
+						id="cantidad"
+						max="5"
+						min="1"
+					/>
+				</div>
+				<div>
+					<label for="tlf">Teléfono:</label>
+					<input
+						type="tel"
+						name="tlf"
+						id="tlf"
+						pattern="[0-9]{9}"
+						required
+					/>
+				</div>
+				<div>
+					<label for="pass">Contraseña:</label>
+					<input type="password" name="pass" id="pass" />
+				</div>
+				<div>
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" />
+				</div>
+				<div>
+					<label for="paises">Paises:</label>
+					<select name="paises" id="paises">
+						<option value="eng">Reino Unido 🇬🇧</option>
+						<option value="esp">España 🇪🇸</option>
+						<option value="fra">Fracia 🇫🇷</option>
+					</select>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Pokemons</legend>
+				<input
+					type="checkbox"
+					name="pokemon"
+					id="pokemon1"
+					value="cinderace"
+				/>
+				<label for="pokemon1">Cinderace</label>
+				<input
+					type="checkbox"
+					name="pokemon"
+					id="pokemon2"
+					value="lucario"
+				/>
+				<label for="pokemon2">Lucario</label>
+				<input
+					type="checkbox"
+					name="pokemon"
+					id="pokemon3"
+					value="garchomp"
+				/>
+				<label for="pokemon3">Garchomp</label>
+			</fieldset>
+			<fieldset>
+				<legend>Lenguaje de programación favorito</legend>
+				<input
+					type="radio"
+					name="lenguaje"
+					id="python"
+					value="python"
+				/>
+				<label for="python">Python</label>
+				<input type="radio" name="lenguaje" id="java" value="java" />
+				<label for="java">Java</label>
+				<input type="radio" name="lenguaje" id="clang" value="clang" checked/>
+				<label for="clang">Clang</label>
+			</fieldset>
+			<br />
+			<div>
+				<button type="submit">Enviar formulario</button>
+			</div>
+		</form>
+	</body>
+</html>
