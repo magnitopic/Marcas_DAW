@@ -47,16 +47,5 @@
 				<button type="submit">Enviar formulario</button>
 			</div>
 		</form>
-		<script>
-			document.querySelector("#repPass").addEventListener('focusout', (e) => {
-					console.log(e.target);
-					if (e.target.value != document.querySelector("#pass").value) {
-						e.target.setCustomValidity('Las contraseñas deven coincidir');
-						console.log("cosas");
-					} else {
-						e.target.setCustomValidity('');
-					}
-				});
-		</script>
 	</body>
 </html>
