@@ -1,53 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>forms</title>
-</head>
-<body>
-	<form action="">
-		<div>
-			<lable for="email">Email:</lable>
-			<input type="text" name,="email" id="email">
-		</div>
-		<div>
-			<lable for="name">Nombre:</lable>
-			<input type="text" name,="name" id="name">
-		</div>
-		<div>
-			<lable for="dni">DNI:</lable>
-			<input type="text" name,="dni" id="dni">
-		</div>
-		<div>
-			<lable for="cv">CV.</lable>
-			<input type="text" name,="" id="">
-		</div>
-		<div>
-			<lable for="date">Fecha de entrevista</lable>
-			<input type="date" name,="date" id="date">
-		</div>
-		<div>
-			<lable for="exp">Expreriencia Laboral:</lable>
-			<input type="radio" name,="exp" id="telf">
-		</div>
-		<div>
-			<lable for="salary">Salario:</lable>
-			<input type="number" name,="salary" id="salary">
-		</div>
-		<div>
-			<lable for="city">Ciudad de trabajo:</lable>
-			<input type="radio" name,="cty" id="Madrid">
-		</div>
-		<div>
-			<lable for="first">Primer trabajo en software?</lable>
-			<input type="checkbox" name,="first" id="first">
-		</div>
-		<div>
-			<lable for="comments">Comentarios addicionales:</lable>
-			<textarea rows="5" cols="10" id="comments">
-		</div>
-	</form>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>forms</title>
+	</head>
+	<body>
+		<form action="">
+			<div>
+				<lable for="name">Nombre:</lable>
+				<input type="text" name="name" id="name" />
+			</div>
+			<div>
+				<lable for="email">Email:</lable>
+				<input type="email" name="email" id="email" />
+			</div>
+			<div>
+				<lable for="dni">DNI:</lable>
+				<input type="text" name="dni" id="dni" />
+			</div>
+			<div>
+				<lable for="cv">Adjuntar CV:</lable>
+				<input type="file" name="" id="" />
+			</div>
+			<div>
+				<lable for="date">Fecha de entrevista</lable>
+				<input type="date" name="date" id="date" />
+			</div>
+			<div>
+				<legend>Expreriencia Laboral:</legend>
+				<div>
+					<input type="checkbox" name="exp" id="telf" value="telf" />
+					<lable for="telf">Telefónica</lable>
+
+					<input type="checkbox" name="exp" id="eve" value="eve" />
+					<lable for="eve">Everis</lable>
+
+					<input type="checkbox" name="exp" id="acce" value="acce" />
+					<lable for="acce">Accenture</lable>
+
+					<input type="checkbox" name="exp" id="delo" value="delo" />
+					<lable for="delo">Deloitte</lable>
+
+					<input type="checkbox" name="exp" id="other" value="other" />
+					<lable for="other">Otras</lable>
+				</div>
+			</div>
+			<div>
+				<lable for="salary">Salario:</lable>
+				<input
+					type="number"
+					name="salary"
+					id="salary"
+					min="0"
+					max="50000"
+				/>
+			</div>
+			<div>
+				<legend>Ciudad de trabajo:</legend>
+				<div>
+					<input type="radio" name="city" id="mad" />
+					<lable for="mad">Madrid</lable>
+					<input type="radio" name="city" id="mal" />
+					<lable for="mal">Málaga</lable>
+					<input type="radio" name="city" id="bar" />
+					<lable for="bar">Barcelona</lable>
+					<input type="radio" name="city" id="bil" />
+					<lable for="bil">Bilbao</lable>
+				</div>
+			</div>
+			<div>
+				<input type="checkbox" name="first" id="first" />
+				<lable for="first">Primer trabajo en software?</lable>
+			</div>
+			<div>
+				<lable for="comments">Comentarios addicionales:</lable>
+				<br />
+				<textarea rows="5" cols="25" id="comments"> </textarea>
+			</div>
+			<div>
+				<button type="submit">Enviar formulario</button>
+			</div>
+		</form>
+	</body>
 </html>
