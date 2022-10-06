@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forms</title>
+	</head>
+	<body>
+		<h1>Rellena tu CV</h1>
+		<form
+			action="mailto:ejemplo@correo.com"
+			method="post"
+			enctype="text/plain"
+		>
+			<div>
+				<label for="name">Nombre</label>
+				<br />
+				<input type="text" id="name" name="name" max="30"/>
+			</div>
+			<div>
+				<label for="surname">Apellidos</label>
+				<br />
+				<input type="text" id="surname" name="surname" max="80"/>
+			</div>
+			<div>
+				<label for="pass">Contraseña</label>
+				<br />
+				<input type="password" id="pass" name="pass" max="10"/>
+			</div>
+			<div>
+				<label for="dni">DNI</label>
+				<br />
+				<input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Z]{1}" />
+			</div>
+			<div>
+				<label for="gender">Sexo</label>
+				<br />
+				<input type="radio" name="gender" id="male" />
+				<label for="male">Hombre</label>
+				<input type="radio" name="gender" id="female" />
+				<label for="female">Mujer</label>
+			</div>
+			<br />
+			<div>
+				<label for="foto">Incluir mi foto</label>
+				<input type="file" id="foto" name="foto" />
+			</div>
+			<br />
+			<div>
+				<input type="checkbox" name="boletin" id="boletin" checked />
+				<label for="boletin">
+					Subscribirme al boletín de novedades
+				</label>
+			</div>
+			<br />
+			<div>
+				<button type="Gurdar cambios">Submit</button>
+				<input type="reset" value="Borrar los datos introducidos" />
+			</div>
+		</form>
+	</body>
+</html>

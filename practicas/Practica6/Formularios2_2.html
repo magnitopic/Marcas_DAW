@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forms</title>
+	</head>
+	<body>
+		<form action="">
+			<fieldset>
+				<legend>Datos personales</legend>
+				<div>
+					<lable>Name</lable>
+					<br /><input type="text" id="name" name="name" max="20" />
+				</div>
+				<div>
+					<lable>Apellidos</lable>
+					<br /><input
+						type="text"
+						id="surname"
+						name="surname"
+						max="90"
+					/>
+				</div>
+				<div>
+					<lable>DNI</lable>
+					<br /><input
+						type="text"
+						id="dni"
+						name="dni"
+						pattern="[0-9]{8}[A-Z]{1}"
+					/>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Datos de conexión</legend>
+				<div>
+					<lable>Nombre de usuario</lable>
+					<br /><input type="email" id="uName" name="uName" />
+				</div>
+				<div>
+					<lable>Contraseña</lable>
+					<br /><input
+						type="password"
+						id="pass"
+						name="pass"
+						max="10"
+					/>
+				</div>
+				<div>
+					<lable>Repite la contraseña</lable>
+					<br /><input
+						type="password"
+						id="rePass"
+						name="rePass"
+						max="10"
+					/>
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>
