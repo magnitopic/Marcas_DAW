@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Formulario de ejemplares revista" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Ejercico 3</title>
+	</head>
+	<body>
+		<form action="mailto:test@centronelson.org" method="post">
+			<div>
+				<label for="name">Nombre y Apellidos</label><br />
+				<input
+					type="text"
+					max="100"
+					id="name"
+					name="name"
+					placeholder="Antonio Perez"
+					required
+				/>
+			</div>
+			<div>
+				<label for="direcc">Dirección Postal</label><br />
+				<input
+					type="text"
+					id="postal"
+					name="postal"
+					placeholder="8330481"
+					max="100"
+					required
+				/>
+			</div>
+			<div>
+				<label for="numEjem">Numero de Ejemplares</label><br />
+				<input
+					type="number"
+					id="numEjem"
+					name="numEjem"
+					min="1"
+					max="10"
+					placeholder="3"
+				/>
+			</div>
+			<div>
+				<label>Tipo de suscripción:</label><br />
+				<input type="checkbox" id="mes" name="mes" checked />
+				<label for="mes">Mensual</label>
+				<input type="checkbox" id="trimes" name="trimes" />
+				<label for="trimes">Trimestral</label>
+				<input type="checkbox" id="anual" name="anual" />
+				<label for="anual">Anual</label>
+			</div>
+			<div>
+				<label for="">Forma de pago</label><br />
+				<input type="radio" id="card" name="pay" />
+				<label for="card">Tarjeta</label>
+				<input type="radio" id="transfer" name="pay" />
+				<label for="transfer">Transferencia Bancaria</label>
+				<input type="radio" id="paypal" name="pay" />
+				<label for="paypal">PayPal</label>
+			</div>
+			<div>
+				<button type="submit">Enviar datos</button>
+				<button type="reset">Eliminar datos</button>
+			</div>
+		</form>
+	</body>
+</html>
