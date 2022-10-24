@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Pagina dedicada a la banda de rock queen"
+		/>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<title>Queen Page</title>
+	</head>
+	<body>
+		<header>
+			<h1>Queen</h1>
+			<p>Banda británica de rock formada en 1970 en Londeres.</p>
+			<a href="https://www.queenonline.com/es/">
+				<img
+					src="queen.jpg"
+					srcset="
+						./queen_small.jpg  340w,
+						./queen.jpg       1920w,
+						./queen_big.jpg   5760w
+					"
+					sizes="(max-width: 400px) 300px, (max-width: 1200px) 1000px, "
+					alt="Foto de los integrantes del grupo Queen"
+					title="Haz clic aquí"
+				/>
+			</a>
+		</header>
+		<main>
+			<article>
+				<h2>Integrantes del grupo</h2>
+				<ul>
+					<li>
+						<a href="https://en.wikipedia.org/wiki/Freddie_Mercury">
+							Freddie Mercury</a
+						>
+					</li>
+					<li>
+						<a href="https://en.wikipedia.org/wiki/Brian_May">
+							Dr Brian May</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://en.wikipedia.org/wiki/Roger_Taylor_(Queen_drummer)"
+							>Roger Taylor</a
+						>
+					</li>
+					<li>
+						<a href="https://en.wikipedia.org/wiki/John_Deacon"
+							>John Deacon</a
+						>
+					</li>
+				</ul>
+			</article>
+			<article>
+				<h2>Dicografía</h2>
+				<p>Grandes Éxitos de Queen</p>
+				<table border="1">
+					<tr>
+						<th>Año</th>
+						<th>Disco</th>
+					</tr>
+					<tr>
+						<td>1975</td>
+						<td>A Night at the Opera</td>
+					</tr>
+					<tr>
+						<td>1986</td>
+						<td>A Kind of Magic</td>
+					</tr>
+					<tr>
+						<td>1989</td>
+						<td>The Miracle</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							"A Kind of Maric" Fue el albúm más exitoso
+						</td>
+					</tr>
+				</table>
+			</article>
+		</main>
+		<footer>
+			<h3>Deja tu mensaje</h3>
+			<form action="#" method="post">
+				<div>
+					<label for="name">Nombre:</label><br />
+					<input type="text" id="name" name="name" />
+				</div>
+				<br />
+				<div>
+					<label for="email">Email:</label><br />
+					<input type="email" id="email" name="email" />
+				</div>
+				<br />
+				<div>
+					<label for="message">Tu mensaje:</label><br />
+					<textarea
+						name="message"
+						id="message"
+						cols="15"
+						rows="5"
+					></textarea>
+				</div>
+				<br />
+				<div>
+					<input type="submit" value="Enviar mensaje" />
+				</div>
+			</form>
+		</footer>
+	</body>
+</html>
