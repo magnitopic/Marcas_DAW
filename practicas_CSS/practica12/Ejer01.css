@@ -1,0 +1,27 @@
+* {
+	font-weight: bold;
+}
+
+.par,
+ul {
+	color: blue;
+}
+
+#destacado,
+#destacado > a {
+	color: black;
+}
+
+a,
+ol {
+	color: green;
+}
+
+p,
+li > a {
+	color: red;
+}
+
+li > ol {
+	color: yellow;
+}

@@ -1,0 +1,23 @@
+div > p:first-of-type {
+	color: red;
+}
+
+#b > p::first-line {
+	color: blue;
+}
+
+#b > p::first-letter {
+	color: black;
+}
+
+a {
+	color: green;
+}
+a:hover,
+a:focus {
+	color: blue;
+}
+
+span[lang="en"] {
+	color: red;
+}

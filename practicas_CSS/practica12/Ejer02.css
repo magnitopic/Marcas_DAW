@@ -1,0 +1,19 @@
+body > p {
+	color: green;
+}
+
+div[lang="en_US"] {
+	color: blue;
+}
+
+.noticia {
+	color: red;
+}
+
+div[lang="fr"] {
+	color: brown;
+}
+
+div[lang*="fr"] {
+	font-weight: bold;
+}
