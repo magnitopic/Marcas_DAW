@@ -1,0 +1,39 @@
+h1 {
+	color: teal;
+}
+
+p > strong,
+a,
+th {
+	color: red;
+}
+
+strong,
+.especial,
+#adicional,
+.destacado {
+	color: yellow;
+}
+
+h2,
+a > em,
+caption {
+	color: blue;
+}
+
+#especial,
+span.especial {
+	color: violet;
+}
+
+div > p > a,
+td {
+	color: green;
+}
+
+table,
+td,
+th {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
