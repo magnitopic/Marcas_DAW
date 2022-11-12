@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+*{
+	font-family: 'Lato', sans-serif;
+}
+
 h1 {
 	color: teal;
 }
@@ -10,7 +16,6 @@ th {
 
 strong,
 .especial,
-#adicional,
 .destacado {
 	color: yellow;
 }
@@ -21,19 +26,32 @@ caption {
 	color: blue;
 }
 
-#especial,
 span.especial {
-	color: violet;
+	color: purple;
 }
 
-div > p > a,
-td {
+#especial,
+a:hover {
+	color: fuchsia;
+}
+
+div > p > a {
 	color: green;
+}
+
+td {
+	color: olive;
+}
+
+#adicional {
+	color: orange;
 }
 
 table,
 td,
-th {
+th,
+tr {
 	border: 1px solid black;
 	border-collapse: collapse;
+	padding: 5px;
 }
