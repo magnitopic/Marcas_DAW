@@ -1,0 +1,20 @@
+div {
+	font-size: 15px;
+	background: #ffffcc;
+	margin: 20px;
+	padding: 20px;
+}
+
+div > div {
+	background: #ffcccc;
+	margin: 20px 0px 20px 0px;
+}
+
+#divB {
+	width: 20em;
+}
+
+#divC,
+#divC > div {
+	width: 50%;
+}
