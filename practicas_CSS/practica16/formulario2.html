@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="formulario2.css" />
+		<title>Formulario2</title>
+	</head>
+	<body>
+		<form action="registro.php" method="post">
+			<h1>Crear Cuenta</h1>
+			<label for="name">Nombre</label>
+			<input type="text" name="name" id="name" />
+			<label for="email">Correo Electrónico</label>
+			<input type="email" name="email" id="email" autocomplete="off" />
+			<label for="pass">Contraseña</label>
+			<input type="password" name="pass" id="pass" />
+			<label for="rePass">Confirma tu contraseña</label>
+			<input type="password" name="rePass" id="rePass" />
+			<input type="submit" value="Crear tu cuenta" />
+		</form>
+	</body>
+</html>
