@@ -1,5 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+@keyframes smaller {
+	from {
+		width: 70%;
+	}
+	to {
+		width: 30%;
+	}
+}
+
+@keyframes spinSize {
+	0% {
+		transform: rotate(0deg) scale(0.5);
+	}
+	50% {
+		transform: rotate(180deg) scale(1.2);
+	}
+	100% {
+		transform: rotate(360deg) scale(0.5);
+	}
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -20,7 +41,7 @@ header {
 	text-align: center;
 	box-shadow: 0px 3px 20px 0px #3a3a3a;
 	max-width: 1000px;
-	width: 90%;
+	width: 80%;
 	margin: auto;
 }
 
@@ -53,7 +74,36 @@ h2 {
 	text-align: center;
 }
 
-footer{
+footer {
+	text-align: center;
+	max-width: 1000px;
+	width: 80%;
 	margin: auto;
-	
+	background: #72646b;
+	color: rgb(188, 188, 188);
+}
+
+.chocolate {
+	color: red;
+}
+
+.bigLinks:hover {
+	font-size: 2rem;
+}
+/* Primera imagen */
+#rotateImage {
+	transform: rotate(180deg);
+}
+
+/* Segunda imagen */
+#samllerImage {
+	transition: all 2s linear;
+}
+
+#samllerImage:hover {
+	transform: scale(0.5);
+}
+/* Tercera imagen */
+#spinSizeImage {
+	animation: spinSize 5s linear infinite;
 }
