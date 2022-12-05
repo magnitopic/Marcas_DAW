@@ -1,7 +1,13 @@
+@keyframes rotate {
+	0%{ transform: rotate(360deg);}
+	100%{transform: rotate(0deg);}
+}
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	overflow: auto;
 }
 
 header,
@@ -22,6 +28,7 @@ footer {
 h1 {
 	text-transform: uppercase;
 	color: #ff9a3c;
+	text-shadow: 3px 3px #000;
 }
 
 header > div {
@@ -43,6 +50,7 @@ li > a {
 	color: #ff9a3c;
 	text-decoration: none;
 	font-size: 1.7rem;
+	text-shadow: 1px 1px #000;
 }
 
 li > a:hover {
@@ -61,9 +69,28 @@ main {
 	flex-direction: column;
 }
 
-.showcase{
-	display: flex;
+h2{
+	font: 2rem Helvetica, sans-serif;
+	color: #ffc93c;
+	text-decoration: underline;
+	text-shadow: 1px 1px #000;
+}
 
+.showcase {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	margin: 1rem auto;
+	align-items: center;
+	text-align: center;
+	flex-wrap: wrap;
+	font: 1.5rem  Georgia, serif;
+}
+
+#promotion{
+	max-width: 20em;
+	margin: .5em;
+	font: 1.5rem/1.4 Georgia, serif;
 }
 
 div > img {
@@ -73,4 +100,20 @@ div > img {
 
 footer {
 	background: #ff9a3c;
+}
+
+
+#addButton{
+	font-size: 1rem;
+	padding: .5em;
+	margin: 1rem 0;
+	border: none;
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	background-color: rgb(92, 92, 186);
+}
+
+#addButton:focus {
+	animation: rotate 2s;
 }
