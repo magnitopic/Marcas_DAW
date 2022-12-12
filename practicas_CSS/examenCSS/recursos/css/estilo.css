@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@keyframes h2Opacity {
+	0% {
+		color: rgba(131, 85, 68, 0.2);
+	}
+	50% {
+		color: rgba(131, 85, 68, 1);
+	}
+	100% {
+		color: rgba(131, 85, 68, 0.2);
+	}
+}
+
+@keyframes buttonHover {
+	100% {
+		transform: rotateX(-180deg);
+	}
+}
+
+* {
+	font-family: "Montserrat", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../img/fondo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header,
+footer,
+main {
+	width: 80%;
+	max-width: 1200px;
+	margin: 3px auto;
+	text-align: center;
+	border-radius: 10px;
+	padding: 2rem 0px;
+	border: burlywood 1px solid;
+}
+
+footer,
+header {
+	background-image: url(../img/cabecera.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header {
+	background-color: burlywood;
+	text-align: center;
+	border-radius: 10px;
+	padding: 2rem 0px;
+}
+
+ul {
+	background-color: rgba(139, 96, 67, 0.6);
+	padding: 0.5rem;
+}
+li {
+	text-decoration: none;
+	display: inline;
+	border-radius: 10px;
+	padding: 0.5rem;
+	transition-duration: 0.2s;
+}
+li:hover {
+	background-color: #e4ad7b;
+}
+
+li > a {
+	text-decoration: none;
+	color: white;
+}
+
+h1 {
+	background-color: rgba(139, 96, 67, 0.6);
+	text-transform: uppercase;
+	padding: 0.5em;
+	font-weight: bold;
+	color: white;
+}
+
+h1:hover {
+	font-weight: lighter;
+}
+
+h2 {
+	color: #825443;
+	text-align: center;
+	margin: 1rem;
+}
+
+main {
+	background-color: white;
+	text-align: start;
+	word-spacing: 2px;
+	padding: 1rem;
+}
+
+article > img {
+	border-radius: 30px;
+	box-shadow: 2px 2px rgba(58, 58, 58, 0.4);
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+
+footer > p {
+	background-color: rgba(139, 96, 67, 0.635);
+	width: fit-content;
+	margin: auto;
+	border-radius: 10px;
+	color: white;
+}
+
+p:first-of-type > a {
+	color: #825443;
+	text-decoration: none;
+}
+p:first-of-type > a:hover {
+	color: #f7cd9c;
+	text-decoration: underline;
+}
+
+a {
+	color: #f7cd9c;
+	text-decoration: underline;
+}
+a:hover {
+	color: #825443;
+	text-decoration: none;
+}
+
+/* Estilos pedidos.html */
+
+form {
+	margin: 0 auto;
+	max-width: 50%;
+}
+
+.round {
+	display: block;
+}
+
+div {
+	margin: 1rem 0px;
+}
+
+input {
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #aaaaaa;
+	border-radius: 5px;
+}
+input:focus {
+	border: 2px solid #ca5f07;
+}
+
+textarea {
+	height: 300px;
+	max-height: 450px;
+	width: 100%;
+	border: 1px solid #aaaaaa;
+	border-radius: 5px;
+}
+textarea:focus {
+	border: 2px solid #ca5f07;
+}
+
+#boton-aceptar {
+	margin: 0 auto;
+	background-color: #825443;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	min-width: 50%;
+	padding: 1em;
+}
+
+/* Animación solo para el H2 de esta pagina */
+.pedidos {
+	animation: h2Opacity 4s infinite;
+}
+
+#boton-aceptar:hover {
+	cursor: pointer;
+	font-weight: bold;
+	animation: buttonHover 0.6s ease-out;
+}

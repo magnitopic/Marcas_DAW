@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./recursos/css/estilo.css" />
+    <title>Examen Tipo B | Pedidos</title>
+  </head>
+  <body>
+    <header>
+      <h1>Panadería Marcelo</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="./pedidos.html">Pedidos</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Acerca de</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="registro.php" method="post" class="formulario">
+        <h2 class="pedidos">Pedidos</h2>
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" class="ent round" />
+        </div>
+        <div>
+          <label for="Apellidos">Apellidos</label>
+          <input
+            type="text"
+            id="apellidos"
+            name="apellidos"
+            class="ent round"
+          />
+        </div>
+        <div>
+          <label for="correo">Correo Electrónico</label>
+          <input type="email" id="correo" name="correo" class="ent round" />
+        </div>
+        <div>
+          <label for="direccion">Dirección</label>
+          <input
+            type="text"
+            id="direccion"
+            name="direccion"
+            class="ent round"
+          />
+        </div>
+        <div>
+          <label for="info">Mensaje</label>
+          <textarea name="info" id="info" class="ent round"> </textarea>
+        </div>
+        <div>
+          <button type="submit" class="boton round" id="boton-aceptar">
+            Enviar tu Mensaje
+          </button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>Panadería Marcelo&copy; 🥖</p>
+      <p></p>
+    </footer>
+  </body>
+</html>
