@@ -1,0 +1,54 @@
+body {
+	margin: 0 2em;
+	padding: 0;
+	background-color: #ddd6fe;
+	font-family: "Roboboto", sans-serif;
+	box-sizing: border-box;
+}
+
+h2 {
+	font-family: "Monospace", sans-serif;
+}
+
+.menu {
+	background-color: white;
+	width: 100%;
+	border-radius: 25px;
+	padding: 15px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.menu > a {
+	background-color: #eff6ff;
+	border-radius: 25px;
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+}
+
+/* Flex box para las clases */
+.menu-start {
+	justify-content: flex-start;
+}
+
+.menu-end {
+	justify-content: flex-end;
+}
+
+.menu-center {
+	justify-content: center;
+}
+
+.menu-between {
+	justify-content: space-between;
+}
+
+.menu-around {
+	justify-content: space-around;
+}
+
+.menu-evenly {
+	justify-content: space-evenly;
+}

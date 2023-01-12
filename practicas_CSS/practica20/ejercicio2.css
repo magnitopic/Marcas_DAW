@@ -1,0 +1,44 @@
+body {
+	background-color: #f1f5f9;
+}
+
+h2 {
+	color: #2054e8;
+}
+
+.contenedor {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.card {
+	background-color: white;
+	border-radius: 25px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 15rem;
+}
+
+p {
+	max-width: 8rem;
+	margin: 0px;
+}
+
+.links {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding: 10px 0px;
+}
+.links > a {
+	background-color: #bfdbfe;
+	border-radius: 5px;
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+}

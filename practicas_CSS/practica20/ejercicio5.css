@@ -1,0 +1,44 @@
+body{
+	background-color: #F1F4F9;
+	box-sizing: border-box;
+}
+
+.contenedor {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.enlaces{
+	background-color: white;
+	width: 20%;
+	height: 330px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 2rem;
+	border-radius: 10px;
+	margin-top: 4rem;
+}
+
+.link{
+	border-radius: 5px;
+	width: 100%;
+	padding:  1rem 0px;
+	margin: 5px 0px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.login-link{
+	background-color: #018DDD;
+	color: white;
+}
+
+.signup-link{
+	color: #018DDD;
+	background-color: white;
+	border: #018DDD 1px solid;
+}
