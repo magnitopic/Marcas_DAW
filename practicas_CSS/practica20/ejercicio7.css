@@ -1,0 +1,36 @@
+body {
+	background-color: #cccccc;
+	min-width: 320px;
+	margin: 0;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	padding: 0px 20px;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+li {
+	list-style-type: none;
+	margin: 0px 10px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.btn {
+	background-color: #0185d4;
+	color: white;
+	border-radius: 20px;
+	padding: 10px;
+}

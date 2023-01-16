@@ -18,7 +18,7 @@ body {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
-.logos > img{
+.logos > img {
 	width: 170px;
 	padding: 1rem;
 }

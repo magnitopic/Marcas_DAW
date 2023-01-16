@@ -1,5 +1,5 @@
-body{
-	background-color: #F1F4F9;
+body {
+	background-color: #f1f4f9;
 	box-sizing: border-box;
 }
 
@@ -10,7 +10,7 @@ body{
 	justify-content: center;
 }
 
-.enlaces{
+.enlaces {
 	background-color: white;
 	width: 20%;
 	height: 330px;
@@ -23,22 +23,22 @@ body{
 	margin-top: 4rem;
 }
 
-.link{
+.link {
 	border-radius: 5px;
 	width: 100%;
-	padding:  1rem 0px;
+	padding: 1rem 0px;
 	margin: 5px 0px;
 	text-decoration: none;
 	text-align: center;
 }
 
-.login-link{
-	background-color: #018DDD;
+.login-link {
+	background-color: #018ddd;
 	color: white;
 }
 
-.signup-link{
-	color: #018DDD;
+.signup-link {
+	color: #018ddd;
 	background-color: white;
-	border: #018DDD 1px solid;
+	border: #018ddd 1px solid;
 }
