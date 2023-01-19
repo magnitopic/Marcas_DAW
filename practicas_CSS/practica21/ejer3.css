@@ -1,0 +1,24 @@
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.logo-wrap {
+}
+
+.btn-wrap {
+	border-radius: 20px;
+	background-color: #0185d4;
+	padding: 15px;
+}
+.btn{
+	text-decoration: none;
+}
+
+ul {
+	flex: 100%;
+	display: flex;
+	margin: auto;
+}
