@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+}
+
+body {
+	background-image: url(imagenes/fondo.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.contenedor {
+	display: flex;
+	background-size: cover;
+	flex-direction: column;
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	padding-top: 2rem;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+nav {
+	background-color: #ffffff66;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+nav > a {
+	text-decoration: none;
+	color: white;
+	transition: 0.3;
+}
+nav > a:hover {
+	text-decoration: underline;
+}
+
+main {
+	background-color: white;
+}
+
+aside {
+	display: none;
+	height: 40%;
+	justify-content: baseline;
+	align-items: center;
+	background-color: #567dcc;
+	justify-content: space-around;
+	padding: 2rem 0px;
+}
+
+.ad {
+	background: #4165a3;
+	color: white;
+	width: 40%;
+	padding: ;
+	text-align: center;
+	font-size: 2.5em;
+	padding: 2rem 0px;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column-reverse;
+	background-color: #ffffff33;
+	color: white;
+	margin-top: 2rem;
+	padding-bottom: 10px;
+	text-align: center;
+}
+footer > div {
+	margin-top: 10px;
+}
+footer > div > a {
+	color: white;
+}
+
+@media screen and (min-width: 1024px) {
+	aside {
+		display: flex;
+	}
+	footer {
+		justify-content: space-evenly;
+		flex-direction: row;
+	}
+	footer > div > a {
+		margin-left: 15px;
+	}
+}
+
+
+@media screen and (min-width: 1440px) {
+	
+}
