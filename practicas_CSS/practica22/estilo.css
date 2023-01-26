@@ -11,16 +11,23 @@ body {
 	background-image: url(imagenes/fondo.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-size: cover;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 .contenedor {
 	display: flex;
-	background-size: cover;
 	flex-direction: column;
 	max-width: 1000px;
 	width: 90%;
 	margin: auto;
 	padding-top: 2rem;
+	flex-wrap: wrap;
 }
 
 .logo {
@@ -40,7 +47,7 @@ nav {
 nav > a {
 	text-decoration: none;
 	color: white;
-	transition: 0.3;
+	transition: 0.3s all;
 }
 nav > a:hover {
 	text-decoration: underline;
@@ -48,9 +55,24 @@ nav > a:hover {
 
 main {
 	background-color: white;
+	padding: 15px;
+}
+
+.thumb > img {
+	width: 100%;
+	height: auto;
+}
+
+h2 {
+	margin: 1rem 0px;
+}
+
+article > p {
+	line-height: 1.8;
 }
 
 aside {
+	width: 100%;
 	display: none;
 	height: 40%;
 	justify-content: baseline;
@@ -64,7 +86,6 @@ aside {
 	background: #4165a3;
 	color: white;
 	width: 40%;
-	padding: ;
 	text-align: center;
 	font-size: 2.5em;
 	padding: 2rem 0px;
@@ -73,12 +94,14 @@ aside {
 footer {
 	display: flex;
 	justify-content: center;
+	width: 100%;
 	align-items: center;
 	flex-direction: column-reverse;
 	background-color: #ffffff33;
 	color: white;
 	margin-top: 2rem;
 	padding-bottom: 10px;
+	margin-bottom: 1rem;
 	text-align: center;
 }
 footer > div {
@@ -101,7 +124,57 @@ footer > div > a {
 	}
 }
 
+@media screen and (min-width: 1920px) {
+	nav{
+		background: none;
+		width: 30%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.logo {
+		display: flex;
+		justify-content: flex-start;
+		width: 70%;
+	}
+
+	header{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin: 2rem 0px;
+	}
+}
 
 @media screen and (min-width: 1440px) {
-	
+	.contenedor {
+		flex-direction: row;
+	}
+
+	main {
+		width: 70%;
+	}
+
+	aside {
+		width: 30%;
+		flex-direction: column;
+		height: auto;
+		display: flex;
+		justify-content: space-between;
+		padding: 1rem;
+	}
+
+	.ad {
+		width: 100%;
+	}
+
+	footer {
+		margin-bottom: 3rem;
+		padding: 1rem;
+
+	}
+
+	footer > div {
+		margin: 0;
+	}
 }
