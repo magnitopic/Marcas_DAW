@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor{
+	display: grid;
+	gap: 1rem;
+	justify-content: center;
+	padding-top: 2rem;
+}
+
+body {
+	background: #F1F4F9;
+	font-family: "Roboto", sans-serif;
+}
+
+section {
+	background: white;
+	width: fit-content;
+	border-radius: 15px;
+	width: 256px;
+}
+
+img{
+	height: 12rem;
+	object-fit: cover;
+	border-radius: 15px 15px 0px 0px;
+}
+
+
+.desc{
+	padding: 1rem;
+}
