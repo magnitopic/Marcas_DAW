@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	display: grid;
+	justify-content: center;
+	margin: 1rem auto;
+	max-width: 1100px;
+}
+
+h3 {
+	color: #3e7cff;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+@media screen and (min-width: 600px) {
+	main {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	img {
+		grid-row: span 2;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	main{
+		grid-template-columns: repeat(3, 1fr);
+	}
+	img{
+		grid-area: 1/2;
+	}
+	#list1{
+		text-align: right;
+	}
+}
