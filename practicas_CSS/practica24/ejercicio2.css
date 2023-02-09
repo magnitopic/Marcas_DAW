@@ -10,20 +10,24 @@ form {
 	margin: 1rem auto;
 	padding: 2rem;
 	border: 1px solid #000;
-	gap: 1rem;
+	gap: 1.5rem;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 2fr 1fr;
+	/* grid-template-rows: 1fr 1fr 2fr 1fr; */
 	grid-template-areas:
 		"name"
 		"email"
 		"message"
-		"submit";
+		"button";
 }
 
 input,
 textarea {
 	width: 100%;
 	padding: 10px;
+}
+
+label{
+	display: block;
 }
 
 button {
@@ -34,31 +38,31 @@ button {
 	width: 100%;
 	padding: 0.5rem;
 	cursor: pointer;
+	display: inline-block;
 }
 
-.name-block{
+#name-block{
 	grid-area: name;
 }
 
-.email-block{
+#email-block{
 	grid-area: email;
 }
 
-.message-block{
+#message-block{
 	grid-area: message;
 }
 
-.button{
-	grid-area: submit;
+button{
+	grid-area: button;
 }
 
 @media screen and (min-width: 530px) {
 	form{
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 100px 100px 100px;
 		grid-template-areas:
 			"name message"
 			"email message"
-			"submit submit";
+			"button button";
 	}
 }
