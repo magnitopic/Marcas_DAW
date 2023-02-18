@@ -33,48 +33,49 @@ header {
 	background-size: cover;
 	background-position: center;
 	grid-area: head;
-	display: grid;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	text-align: center;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 0.5fr 1fr;
-	grid-template-areas:
-		"newZealand"
-		"agencyName"
-		"links";
 }
-header > h1 {
+header h1 {
 	color: white;
 	text-shadow: 2px 2px 7px #000000;
 	text-transform: uppercase;
-	grid-area: agencyName;
 	align-self: center;
 	font-size: 3em;
 }
 
-header > p {
-	grid-area: newZealand;
+header p {
 	color: #dba00c;
 	text-shadow: 2px 2px 7px #000000;
-	align-self: flex-end;
+	order: -1;
 	font-size: 2em;
 	font-weight: bold;
 }
 
 nav {
-	grid-area: links;
+	width: 100%;
 }
-nav > ul {
+nav ul {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
 }
-nav > ul > li > a {
+nav a {
 	color: white;
 	text-decoration: underline;
+	transition: 0.3s all;
+}
+nav li :hover {
+	color: #cc8500;
+	text-decoration: none;
 }
 
 /* Main */
 .index {
+	grid-area: main;
 	max-width: 1200px;
 	min-height: 50vh;
 }
@@ -84,33 +85,58 @@ article {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	text-align: center;
 }
 
-article > ul > li {
+/* First article */
+.choose-us-box li {
 	box-shadow: 1px 2px 6px 0px #404040;
 	min-height: 10rem;
-	display: grid;
-	grid-template-columns: 10rem 25rem;
-	grid-template-rows: 1fr;
-	grid-template-areas: "number text";
 	background-color: #dba00c;
-	text-align: center;
-  margin: 2rem;
+	display: flex;
+	flex-direction: row;
+	margin: 1rem;
 }
-article > ul > li > span {
-	grid-area: number;
-	color: white;
-	font-size: 4em;
-}
-article > ul > li:nth-child(2n) {
+.choose-us-box li:nth-child(2n) {
 	background-color: #cc8500;
 }
-article > ul > li > p {
-	background-color: white;
-	font-size: 2rem;
+
+.choose-us-box span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 3em;
+	width: 10rem;
 }
 
-.index > h2 {
+.choose-us-box p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	background-color: white;
+}
+
+/* Second section */
+.place-to-visit {
+	margin: 1rem;
+}
+
+.place-to-visit p {
+	display: none;
+}
+
+.place-to-visit h3 {
+	margin-top: 2rem;
+	color: #fda300;
+}
+
+.place-to-visit img {
+	filter: grayscale(1);
+}
+.place-to-visit img:hover {
+	filter: grayscale(0);
 }
 
 /* Footer */
