@@ -1,0 +1,110 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	background-color: #f2f2f2;
+	text-align: center;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+main {
+	display: grid;
+	width: 90%;
+	max-width: 1200px;
+	padding: 2rem;
+	gap: 2rem 0px;
+}
+
+.anuncio {
+	display: grid;
+	gap: 2rem 0px;
+	justify-items: center;
+}
+.anuncio h2 {
+	color: #4861df;
+	font-size: 2rem;
+}
+.anuncio p {
+	color: #575555;
+	font-size: 1.5rem;
+}
+.anuncio button {
+	background: #4861df;
+	border-radius: 20px;
+	width: 50%;
+	cursor: pointer;
+	color: white;
+	border: none;
+	padding: 10px 0px;
+	font-weight: bold;
+}
+
+.contenedor-servicios {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+}
+
+.textos {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	text-align: center;
+	height: 100%;
+}
+
+.box {
+	background-color: white;
+	padding: 1rem;
+	border-radius: 15px;
+	min-height: 10rem;
+	box-shadow: 2px 2px 7px #404040;
+}
+
+.box h3 {
+	color: #4861df;
+}
+
+.box p {
+	font-style: italic;
+}
+
+.box a {
+	color: black;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 640px) {
+	main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+    gap: 2rem;
+	}
+
+  .anuncio{
+    width: 30%;
+  }
+
+  .contenedor-servicios{
+    width: 70%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contenedor-servicios{
+    width: 70%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
