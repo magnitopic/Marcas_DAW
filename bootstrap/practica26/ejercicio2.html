@@ -4,25 +4,35 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="estilos.css" />
 		<title>Title</title>
 		<title>Práctica 26</title>
 	</head>
 	<body>
-		<div class="container">
-			<header class="row bg-success text-white">
+		<div class="container mt-2">
+			<header class="row text-white">
 				<div class="col">
 					<h1>Header</h1>
 					<p>12 Columnas</p>
 				</div>
 			</header>
 
-			<section class="row">
-				<main class="col">
+			<section class="row my-3 contenedor-main">
+				<main class="col-12 col-md-8">
 					<h2>MAIN</h2>
-					<p class="">8 Columnas</p>
-					<p class="">12 Columnas</p>
+					<p class="d-none d-md-flex">8 Columnas</p>
+					<p class="d-md-none">12 Columnas</p>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Veritatis unde impedit veniam quis. Explicabo eligendi
@@ -40,18 +50,18 @@
 					</p>
 				</main>
 
-				<aside class="col">
+				<aside class="col-12 col-md-4 align-self-md-center">
 					<h3>ASIDE</h3>
-					<p class="">4 Columnas</p>
-					<p class="">12 Columnas</p>
+					<p class="d-none d-md-flex">4 Columnas</p>
+					<p class="d-md-none">12 Columnas</p>
 				</aside>
 			</section>
 
-			<section class="row">
-				<div class="col">
-					<p class="">3 Columnas</p>
-					<p class="">4 Columnas</p>
-					<p class="">12 Columnas</p>
+			<section class="widgets row my-3 justify-content-lg-between">
+				<div class="col-12 col-md-4 col-lg-3 py-2">
+					<p class="d-none d-md-none d-lg-block">3 Columnas</p>
+					<p class="d-none d-md-block d-lg-none">4 Columnas</p>
+					<p class="d-md-none d-lg-none">12 Columnas</p>
 
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -62,10 +72,10 @@
 					</p>
 				</div>
 
-				<div class="col">
-					<p class="">3 Columnas</p>
-					<p class="">4 Columnas</p>
-					<p class="">12 Columnas</p>
+				<div class="col-12 col-md-4 col-lg-3 py-2">
+					<p class="d-none d-md-none d-lg-block">3 Columnas</p>
+					<p class="d-none d-md-block d-lg-none">4 Columnas</p>
+					<p class="d-md-none d-lg-none">12 Columnas</p>
 
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -76,10 +86,10 @@
 					</p>
 				</div>
 
-				<div class="col">
-					<p class="">3 Columnas</p>
-					<p class="">4 Columnas</p>
-					<p class="">12 Columnas</p>
+				<div class="col-12 col-md-4 col-lg-3 py-2">
+					<p class="d-none d-md-none d-lg-block">3 Columnas</p>
+					<p class="d-none d-md-block d-lg-none">4 Columnas</p>
+					<p class="d-md-none d-lg-none">12 Columnas</p>
 
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -92,7 +102,7 @@
 			</section>
 
 			<footer class="row">
-				<div class="col">
+				<div class="col text-white">
 					<h4>Footer</h4>
 					<p>12 Columnas</p>
 				</div>
