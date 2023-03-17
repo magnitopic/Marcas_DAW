@@ -102,12 +102,45 @@
 			</nav>
 		</header>
 		<main>
-			<h1>Hi</h1>
-			<h1>Hi</h1>
-			<h1>Hi</h1>
-			<form action="" id="contacto-form" class="container">
-				<div class="row">
-					<h2 class="col-12">Contacto</h2>
+			<!-- https://live.staticflickr.com/1922/43495535800_dc69a4118f_k.jpg -->
+			<!-- https://live.staticflickr.com/65535/49623660843_be49e25b5a_k.jpg -->
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+				</div>
+				<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="https://live.staticflickr.com/65535/49623660843_57c2d2db6a_o.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="https://live.staticflickr.com/7812/32152445697_87eb2101dd_k.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="https://live.staticflickr.com/65535/50244756231_cf805e2728_c.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="https://live.staticflickr.com/8032/8042969205_69c42d4abd_k.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="https://live.staticflickr.com/65535/49624176106_e4a04e8f1f_o.jpg" class="d-block w-100" alt="...">
+				</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+			<form action="" id="contacto-form" class="container w-lg-75">
+				<div class="col-12 d-flex align-items-center justify-content-center pb-4">
+					<h2>Contacto</h2>
 				</div>
 				<div class="row">
 					<div class="col-12 col-lg-6 form-floating mb-3">
@@ -142,7 +175,9 @@
 						<label for="message">Comentarios</label>
 					</div>
 				</div>
-				<button type="submit" class="btn btn-primary">Enviar</button>
+				<div class="d-flex col-12 align-items-center justify-content-center">
+					<button type="submit" class="btn btn-primary">Enviar</button>
+				</div>
 			</form>
 		</main>
 	</body>
