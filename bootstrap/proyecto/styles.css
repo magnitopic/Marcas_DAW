@@ -1,0 +1,29 @@
+footer {
+	padding: 2rem 0px;
+	background: linear-gradient(150deg, #1a1a1a -3.38%, #3a2d2d 78.58%);
+}
+
+.icon-social {
+	width: 4rem;
+	height: 4rem;
+	color: #fff;
+	background: #cbcbcb;
+	margin: 1.25rem;
+	border-radius: 3rem;
+}
+.icon-social svg {
+	height: 2rem;
+	width: 2rem;
+}
+
+#facebook {
+	background-color: #1877f2;
+}
+
+#twitter {
+	background-color: #1da1f2;
+}
+
+#instagram {
+	background-color: #c13584;
+}
