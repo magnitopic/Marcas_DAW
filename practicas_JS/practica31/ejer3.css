@@ -1,0 +1,10 @@
+.app {
+	height: 100px;
+	width: 100px;
+	background-color: red;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
