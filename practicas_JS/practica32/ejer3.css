@@ -1,3 +1,10 @@
+section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
 .color-code {
 	height: 200px;
 	width: 200px;
@@ -6,4 +13,12 @@
 	align-items: center;
 	border: 1px solid black;
 	box-shadow: 5px 5px 5px lightgray;
+}
+
+.btn{
+	color: white;
+	background-color: blue;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
 }
