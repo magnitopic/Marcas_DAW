@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script defer src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>33 - Formulario</title>
+</head>
+<body>
+	<main>
+		<form action="#" method="get">
+			<div id="form">
+				<input required id="name" class="text-input" type="text" placeholder="Nombre">
+				<input required id="email" class="text-input" type="text" placeholder="Correo">
+				<div id="sectors-container">
+					<label class="radioButton">Hombre
+						<input type="radio" checked="checked" name="genero" value="M">
+					</label>
+					<label class="radioButton">Mujer
+						<input type="radio" name="genero" value="F">
+					</label>
+				</div>
+				<div>
+					<input required type="checkbox" name="terms" id="terms"> <label for="terms"> Acepto Términos y Condiciones</label>
+				</div>
+				<div id="error-box">
+				
+				</div>
+			</div>
+			<button id="register" type="submit">Registrarse</button>
+		</form>
+	</main>
+</body>
+</html>
