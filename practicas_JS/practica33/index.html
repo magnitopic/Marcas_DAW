@@ -15,19 +15,19 @@
 				<input required id="name" class="text-input" type="text" placeholder="Nombre">
 				<input required id="email" class="text-input" type="text" placeholder="Correo">
 				<div id="sectors-container">
-					<label class="radioButton">Hombre
-						<input type="radio" checked="checked" name="genero" value="M">
+					<label class="radioButton" for="M">Hombre
+						<input type="radio" id="M" name="genero" value="M">
 					</label>
-					<label class="radioButton">Mujer
-						<input type="radio" name="genero" value="F">
+					<label class="radioButton" for="F">Mujer
+						<input type="radio" id="F" name="genero" value="F">
 					</label>
 				</div>
 				<div>
 					<input required type="checkbox" name="terms" id="terms"> <label for="terms"> Acepto Términos y Condiciones</label>
 				</div>
-				<div id="error-box">
-				
-				</div>
+				<ul id="error-box">
+					
+				</ul>
 			</div>
 			<button id="register" type="submit">Registrarse</button>
 		</form>
