@@ -1,0 +1,28 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Cambria, Arial;
+}
+
+#form {
+	display: flex;
+	flex-direction: column;
+	margin: 2rem auto;
+	max-width: 400px;
+	gap: 0.5rem;
+	border: 1px solid black;
+	padding: 1rem;
+}
+
+button {
+	background-color: lightblue;
+	border: none;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.error {
+	display: none;
+	color: red;
+}
